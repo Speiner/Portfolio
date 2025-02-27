@@ -141,4 +141,62 @@
         width: 100%;
         margin: 10px 0;
     }
+
+    button, a {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Style pour les boutons "Télécharger CV" et "Rapport de Stage" */
+a, button {
+    background-color: #e94560; /* Couleur d'arrière-plan d'un rouge doux */
+    color: white; /* Texte en blanc */
+    border: 2px solid #e94560; /* Bordure rouge correspondant au fond */
+}
+
+a:hover, button:hover {
+    background-color: #16213e; /* Fond bleu sombre au survol */
+    color: #e94560; /* Texte rouge au survol */
+    border-color: #e94560; /* Bordure rouge au survol */
+}
+
+a:active, button:active {
+    background-color: #0f3460; /* Fond encore plus sombre quand le bouton est pressé */
+    color: white; /* Texte reste blanc */
+    border-color: #0f3460; /* Bordure correspondante à l'état pressé */
+}
+
+/* Style spécifique pour les liens de téléchargement dans les sections */
+#cv a, #stages a {
+    background-color: #16213e;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    border: none;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+#cv a:hover, #stages a:hover {
+    background-color: #e94560;
+    color: white;
+    border-color: #e94560;
+}
+
+#cv a:active, #stages a:active {
+    background-color: #0f3460;
+    color: white;
+    border-color: #0f3460;
+}
 </style>
