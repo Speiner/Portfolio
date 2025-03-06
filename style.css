@@ -1,1 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Utilisation de flexbox pour aligner le contenu */
+}
 
+/* Menu latéral */
+nav {
+    width: 200px; /* Largeur du menu latéral */
+    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+    background-color: #16213e;
+    position: fixed; /* Reste fixe quand on fait défiler la page */
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20px;
+}
+
+/* Liste du menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Style pour chaque élément du menu */
+nav ul li {
+    margin: 10px 0;
+}
+
+/* Style pour les liens du menu */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+/* Effet au survol des liens du menu */
+nav ul li a:hover {
+    background-color: #e94560;
+}
+
+/* Contenu principal */
+main {
+    margin-left: 220px; /* Espace pour le menu latéral */
+    padding: 20px;
+    width: calc(100% - 220px); /* Réduit la largeur du contenu pour ne pas se superposer au menu */
+}
+
+/* Style pour les sections du contenu */
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #0f3460;
+    border-radius: 10px;
+}
+
+/* Style pour les barres de compétence */
+.barre {
+    background-color: grey;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.niveau {
+    height: 10px;
+    background-color: lightblue;
+    border-radius: 5px;
+}
+
+/* Style pour le formulaire */
+form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+/* Style pour les boutons et liens de téléchargement */
+a {
+    background-color: #e94560;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    border: none;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background-color: #16213e;
+    color: #e94560;
+    border-color: #e94560;
+}
+
+a:active {
+    background-color: #0f3460;
+    color: white;
+    border-color: #0f3460;
+}
+
+/* Style pour le formulaire de contact */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ajout de marges et d'espaces pour les champs du formulaire */
+form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    background-color: #e94560;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #16213e;
+    color: #e94560;
+    border-color: #e94560;
+}
