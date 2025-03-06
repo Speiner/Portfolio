@@ -1,17 +1,17 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #1a1a2e;
+    background-color: #000046;
     color: white;
     margin: 0;
     padding: 0;
-    display: flex; /* Utilisation de flexbox pour aligner le contenu */
+    display: flex;
 }
 
 /* Menu latéral */
 nav {
     width: 200px; /* Largeur du menu latéral */
     height: 100vh; /* Prend toute la hauteur de la fenêtre */
-    background-color: #16213e;
+    background-color: #000046;
     position: fixed; /* Reste fixe quand on fait défiler la page */
     top: 0;
     left: 0;
@@ -40,11 +40,13 @@ nav ul li a {
     padding: 10px 20px;
     display: block;
     transition: background-color 0.3s ease;
+    background-color: #e60000;
+    text-align: center;
 }
 
 /* Effet au survol des liens du menu */
 nav ul li a:hover {
-    background-color: #e94560;
+    background-color: #9e0000;
 }
 
 /* Contenu principal */
@@ -58,7 +60,7 @@ main {
 section {
     padding: 20px;
     margin: 20px 0;
-    background-color: #0f3460;
+    background-color: #000046;
     border-radius: 10px;
 }
 
@@ -85,7 +87,7 @@ form input, form textarea, form button {
 
 /* Style pour les boutons et liens de téléchargement */
 a {
-    background-color: #e94560;
+    background-color: #e60000;
     color: white;
     padding: 12px 25px;
     border-radius: 8px;
@@ -99,15 +101,12 @@ a {
 }
 
 a:hover {
-    background-color: #16213e;
-    color: #e94560;
-    border-color: #e94560;
+    background-color: #9e0000;
 }
 
 a:active {
-    background-color: #0f3460;
+    background-color: #000046;
     color: white;
-    border-color: #0f3460;
 }
 
 /* Style pour le formulaire de contact */
@@ -130,7 +129,7 @@ form input, form textarea {
 }
 
 form button {
-    background-color: #e94560;
+    background-color: #e60000;
     color: white;
     border: none;
     border-radius: 5px;
@@ -141,7 +140,5 @@ form button {
 }
 
 form button:hover {
-    background-color: #16213e;
-    color: #e94560;
-    border-color: #e94560;
+    background-color: #9e0000;
 }
