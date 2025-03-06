@@ -9,111 +9,123 @@ body {
 
 /* Menu latéral */
 nav {
-    width: 200px; /* Largeur du menu latéral */
-    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+    width: 220px;
+    height: 100vh;
     background-color: #000046;
-    position: fixed; /* Reste fixe quand on fait défiler la page */
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(255, 255, 255, 0.1);
 }
 
-/* Liste du menu */
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
-/* Style pour chaque élément du menu */
 nav ul li {
     margin: 10px 0;
 }
 
-/* Style pour les liens du menu */
 nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    padding: 10px 20px;
+    padding: 12px 20px;
     display: block;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s;
     background-color: #e60000;
     text-align: center;
     font-weight: bold;
     border-radius: 5px;
 }
 
-/* Effet au survol des liens du menu */
 nav ul li a:hover {
     background-color: #9e0000;
+    transform: scale(1.05);
 }
 
 /* Contenu principal */
 main {
-    margin-left: 220px; /* Espace pour le menu latéral */
+    margin-left: 240px;
     padding: 20px;
-    width: calc(100% - 220px); /* Réduit la largeur du contenu pour ne pas se superposer au menu */
+    width: calc(100% - 240px);
 }
 
-/* Style pour les sections du contenu */
 section {
     padding: 20px;
     margin: 20px 0;
-    background-color: #000046;
+    background-color: #111166;
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
-/* Style pour les barres de compétence */
+h2 {
+    color: #ffcc00;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 5px;
+}
+
+/* Barres de compétence */
+.competence {
+    margin-bottom: 15px;
+}
+
 .barre {
     background-color: grey;
     width: 100%;
-    height: 10px;
+    height: 12px;
     border-radius: 5px;
+    overflow: hidden;
 }
 
 .niveau {
-    height: 10px;
+    height: 12px;
     background-color: lightblue;
     border-radius: 5px;
+    transition: width 0.5s ease;
 }
 
-/* Style pour les boutons et liens de téléchargement */
-a {
+/* Liens et boutons */
+a, form button {
     background-color: #e60000;
     color: white;
-    padding: 12px 25px;
+    padding: 12px 20px;
     border-radius: 8px;
     border: none;
     display: inline-block;
-    margin-top: 10px;
     font-size: 16px;
     font-weight: 600;
     text-align: center;
     transition: all 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-a:hover {
+a:hover, form button:hover {
     background-color: #9e0000;
+    transform: scale(1.05);
 }
 
-a:active {
+a:active, form button:active {
     background-color: #000046;
     color: white;
 }
 
-/* Style pour le formulaire de contact */
+/* Formulaire de contact */
 form {
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
-/* Ajout de marges et d'espaces pour les champs du formulaire */
 form label {
     font-size: 16px;
-    margin-bottom: 5px;
+    font-weight: bold;
 }
 
 form input, form textarea {
@@ -121,19 +133,11 @@ form input, form textarea {
     font-size: 16px;
     border-radius: 5px;
     border: 1px solid #ddd;
-}
-
-form button {
-    background-color: #e60000;
+    background-color: #222266;
     color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 12px 25px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-form button:hover {
-    background-color: #9e0000;
+form textarea {
+    resize: vertical;
+    min-height: 100px;
 }
