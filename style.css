@@ -11,42 +11,68 @@ body {
 nav {
     width: 220px;
     height: 100vh;
-    background-color: #000046;
+    background-color: #111122; /* Couleur de fond plus sombre */
     position: fixed;
     top: 0;
     left: 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding-top: 20px;
-    box-shadow: 2px 0 5px rgba(255, 255, 255, 0.1);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+nav header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+nav header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+nav header h1 {
+    font-size: 18px;
+    color: white;
+    margin: 0;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 
 nav ul li {
     margin: 10px 0;
+    text-align: center;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
-    padding: 12px 20px;
+    font-size: 16px;
+    padding: 10px;
     display: block;
     transition: background-color 0.3s ease, transform 0.2s;
-    background-color: #e60000;
-    text-align: center;
-    font-weight: bold;
     border-radius: 5px;
 }
 
 nav ul li a:hover {
-    background-color: #9e0000;
+    background-color: #333366;
     transform: scale(1.05);
+}
+
+/* Icônes */
+nav ul li a .icon {
+    margin-right: 10px;
 }
 
 /* Contenu principal */
@@ -61,7 +87,7 @@ section {
     margin: 20px 0;
     background-color: #111166;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
